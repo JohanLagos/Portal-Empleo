@@ -1,5 +1,4 @@
 from django.db import models
-from django.conf import settings # Asegúrate de que la configuración de AUTH_USER_MODEL esté configurada correctamente
 from django.contrib.auth.models import AbstractUser
 
 # Create your models here.

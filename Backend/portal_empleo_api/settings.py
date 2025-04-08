@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'rest_framework', # Django REST framework
     'rest_framework_simplejwt', # JWT authentication
     'usuarios',
+    'empleos',
 ]
 
 MIDDLEWARE = [
@@ -128,7 +129,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = 'usuarios.Usuario' 
 
-CORS_ALLOWED_ORIGINS = []
+CORS_ALLOW_ALL_ORIGINS = True  # Allow all origins for CORS
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
